@@ -86,7 +86,7 @@ function Navbar() {
   return (
     <nav style={{ position: "fixed", top: 0, left: 0, right: 0, zIndex: 100, padding: scrolled ? "10px 20px" : "16px 20px", background: scrolled || menuOpen ? "rgba(26,26,26,0.97)" : "transparent", backdropFilter: scrolled || menuOpen ? "blur(16px)" : "none", borderBottom: scrolled ? "1px solid rgba(173,26,31,0.25)" : "1px solid transparent", transition: "all 0.4s cubic-bezier(0.16,1,0.3,1)" }}>
       <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-        <img src={IMG.logo} alt="Bard Conservatory" style={{ height: mobile ? 28 : 36, filter: "brightness(0) invert(1)", opacity: 0.95 }} />
+        <img src={IMG.logo} alt="Bard Conservatory" style={{ height: mobile ? 44 : 56, filter: "brightness(0) invert(1)", opacity: 0.95 }} />
         {mobile ? (
           <button onClick={() => setMenuOpen(!menuOpen)} style={{ background: "none", border: "none", cursor: "pointer", padding: 8, display: "flex", flexDirection: "column", gap: 5, alignItems: "center" }}>
             <span style={{ display: "block", width: 22, height: 2, background: C.white, transition: "all 0.3s", transform: menuOpen ? "rotate(45deg) translate(2.5px, 2.5px)" : "none" }} />

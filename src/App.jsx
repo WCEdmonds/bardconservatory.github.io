@@ -120,7 +120,7 @@ function Hero() {
       <div style={{ position: "absolute", inset: 0, zIndex: 1, background: "linear-gradient(180deg, rgba(26,26,26,0.3) 0%, rgba(173,26,31,0.1) 50%, rgba(26,26,26,0.95) 100%)" }} />
       {!mobile && <div style={{ position: "absolute", left: 40, top: "20%", bottom: "20%", width: 2, background: `linear-gradient(to bottom, transparent, ${C.red}, transparent)`, opacity: 0.4, zIndex: 2 }} />}
       <div style={{ position: "relative", zIndex: 3, padding: mobile ? "100px 24px 80px" : "0 clamp(32px, 6vw, 120px)", maxWidth: 900 }}>
-        <FadeIn delay={0.2}><div style={{ fontFamily: "'Libre Franklin', sans-serif", fontSize: mobile ? 10 : 12, letterSpacing: mobile ? 3 : 5, color: C.red, textTransform: "uppercase", marginBottom: mobile ? 20 : 28, fontWeight: 500 }}>Bard College Conservatory of Music</div></FadeIn>
+        <FadeIn delay={0.2}><div style={{ fontFamily: "'Libre Franklin', sans-serif", fontSize: mobile ? 10 : 12, letterSpacing: mobile ? 3 : 5, color: "#e85a5f", textTransform: "uppercase", marginBottom: mobile ? 20 : 28, fontWeight: 600 }}>Bard College Conservatory of Music</div></FadeIn>
         <FadeIn delay={0.5}><h1 style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontSize: mobile ? 36 : "clamp(44px, 6.5vw, 88px)", fontWeight: 400, color: C.white, lineHeight: 1.08, margin: 0 }}>Where Music Meets<br /><span style={{ fontStyle: "italic", color: C.cream }}>the Life of the Mind</span></h1></FadeIn>
         <FadeIn delay={0.8}><p style={{ fontFamily: "'Libre Franklin', sans-serif", fontSize: mobile ? 15 : 17, lineHeight: 1.75, color: "rgba(255,255,255,0.5)", maxWidth: 480, margin: "24px 0 0" }}>The only conservatory that pairs rigorous classical training with a full liberal arts education — producing musicians who think, create, and lead.</p></FadeIn>
         <FadeIn delay={1.0}><div style={{ display: "flex", flexDirection: mobile ? "column" : "row", gap: 12, marginTop: 36 }}>
@@ -149,12 +149,12 @@ function StatBar() {
 
 function MissionSection() {
   const mobile = useIsMobile();
-  return (<section style={{ background: C.cream, padding: mobile ? "64px 24px" : "clamp(80px, 10vw, 160px) 32px", position: "relative", overflow: "hidden" }}>
-    <div style={{ position: "absolute", top: -30, left: "3%", fontFamily: "'Instrument Serif', serif", fontSize: mobile ? 180 : "clamp(200px, 28vw, 500px)", color: "rgba(173,26,31,0.04)", lineHeight: 1, pointerEvents: "none", fontStyle: "italic" }}>{"\u201C"}</div>
+  return (<section style={{ background: "#ebe2ce", padding: mobile ? "64px 24px" : "clamp(80px, 10vw, 160px) 32px", position: "relative", overflow: "hidden" }}>
+    <div style={{ position: "absolute", top: -30, left: "3%", fontFamily: "'Instrument Serif', serif", fontSize: mobile ? 180 : "clamp(200px, 28vw, 500px)", color: "rgba(173,26,31,0.09)", lineHeight: 1, pointerEvents: "none", fontStyle: "italic" }}>{"\u201C"}</div>
     <div style={{ maxWidth: 780, margin: "0 auto", position: "relative" }}>
       <FadeIn><div style={{ width: 40, height: 3, background: C.red, marginBottom: 24 }} /></FadeIn>
-      <FadeIn delay={0.1}><h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: mobile ? 26 : "clamp(28px, 4vw, 48px)", fontWeight: 400, color: C.darkAlt, lineHeight: 1.35, margin: 0, fontStyle: "italic" }}>Music, like all art, engages the mind and the heart.</h2></FadeIn>
-      <FadeIn delay={0.25}><p style={{ fontFamily: "'Libre Franklin', sans-serif", fontSize: mobile ? 15 : 16, lineHeight: 1.85, color: C.grey, marginTop: 20, maxWidth: 600 }}>The mission of the Bard College Conservatory of Music is to provide the best possible preparation for a life immersed in the creation and performance of music — while cultivating the intellectual breadth that gives artistry its deepest meaning.</p></FadeIn>
+      <FadeIn delay={0.1}><h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: mobile ? 26 : "clamp(28px, 4vw, 48px)", fontWeight: 400, color: C.dark, lineHeight: 1.35, margin: 0, fontStyle: "italic" }}>Music, like all art, engages the mind and the heart.</h2></FadeIn>
+      <FadeIn delay={0.25}><p style={{ fontFamily: "'Libre Franklin', sans-serif", fontSize: mobile ? 15 : 16, lineHeight: 1.85, color: C.mid, marginTop: 20, maxWidth: 600 }}>The mission of the Bard College Conservatory of Music is to provide the best possible preparation for a life immersed in the creation and performance of music — while cultivating the intellectual breadth that gives artistry its deepest meaning.</p></FadeIn>
       <FadeIn delay={0.4}><a href="https://www.bard.edu/conservatory/about/" style={{ display: "inline-block", marginTop: 28, fontFamily: "'Libre Franklin', sans-serif", fontSize: 13, letterSpacing: 2, color: C.red, textTransform: "uppercase", textDecoration: "none", fontWeight: 600, borderBottom: `2px solid ${C.red}`, paddingBottom: 4 }}>More About Us →</a></FadeIn>
     </div>
   </section>);
@@ -162,16 +162,16 @@ function MissionSection() {
 
 function ProgramsSection() {
   const [hov, setHov] = useState(null); const mobile = useIsMobile();
-  return (<section id="programs" style={{ background: C.white, padding: mobile ? "64px 24px" : "clamp(80px, 10vw, 140px) 32px" }}>
+  return (<section id="programs" style={{ background: C.cream, padding: mobile ? "64px 24px" : "clamp(80px, 10vw, 140px) 32px" }}>
     <div style={{ maxWidth: 1100, margin: "0 auto" }}>
       <FadeIn>
         <div style={{ width: 32, height: 3, background: C.red, marginBottom: 16 }} />
         <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: mobile ? 28 : "clamp(28px, 4vw, 44px)", fontWeight: 400, color: C.darkAlt, margin: "0 0 40px" }}>Degrees & Programs</h2>
       </FadeIn>
       {PROGRAMS.map((p, i) => (<FadeIn key={i} delay={i * 0.04}><a href={p.url} style={{ textDecoration: "none", display: "block" }} onMouseEnter={() => setHov(i)} onMouseLeave={() => setHov(null)}>
-        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: mobile ? "18px 0" : "22px 0", borderTop: `1px solid ${C.lightGrey}`, transition: "padding-left 0.3s, background 0.3s", paddingLeft: hov === i ? 8 : 0, background: hov === i ? "rgba(173,26,31,0.02)" : "transparent", gap: 8 }}>
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: mobile ? "18px 0" : "22px 0", borderTop: "1px solid rgba(26,26,26,0.12)", transition: "padding-left 0.3s, background 0.3s", paddingLeft: hov === i ? 8 : 0, background: hov === i ? "rgba(173,26,31,0.04)" : "transparent", gap: 8 }}>
           <div style={{ display: "flex", alignItems: "center", gap: mobile ? 10 : 16, flex: 1, minWidth: 0 }}>
-            {!mobile && <span style={{ fontFamily: "'Libre Franklin', sans-serif", fontSize: 9, letterSpacing: 2, textTransform: "uppercase", color: hov === i ? C.red : C.grey, background: hov === i ? "rgba(173,26,31,0.08)" : C.lightGrey, padding: "3px 8px", whiteSpace: "nowrap", fontWeight: 500, transition: "all 0.3s" }}>{p.tag}</span>}
+            {!mobile && <span style={{ fontFamily: "'Libre Franklin', sans-serif", fontSize: 9, letterSpacing: 2, textTransform: "uppercase", color: hov === i ? C.red : C.mid, background: hov === i ? "rgba(173,26,31,0.08)" : "rgba(26,26,26,0.06)", padding: "3px 8px", whiteSpace: "nowrap", fontWeight: 500, transition: "all 0.3s" }}>{p.tag}</span>}
             <span style={{ fontFamily: "'Instrument Serif', serif", fontSize: mobile ? 17 : "clamp(18px, 2.5vw, 23px)", color: hov === i ? C.red : C.darkAlt, transition: "color 0.3s" }}>{p.title}</span>
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: 12, flexShrink: 0 }}>
@@ -180,7 +180,7 @@ function ProgramsSection() {
           </div>
         </div>
       </a></FadeIn>))}
-      <FadeIn delay={0.3}><div style={{ marginTop: 28, padding: mobile ? "16px 20px" : "18px 28px", background: C.cream, display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 10 }}>
+      <FadeIn delay={0.3}><div style={{ marginTop: 28, padding: mobile ? "16px 20px" : "18px 28px", background: C.white, display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 10 }}>
         <span style={{ fontFamily: "'Libre Franklin', sans-serif", fontSize: 14, color: C.mid }}><strong style={{ color: C.darkAlt }}>Preparatory Division</strong> — ages 3–18</span>
         <a href="https://www.bard.edu/conservatory/preparatory/" style={{ fontFamily: "'Libre Franklin', sans-serif", fontSize: 12, letterSpacing: 2, color: C.red, textDecoration: "none", textTransform: "uppercase", fontWeight: 600 }}>Learn More →</a>
       </div></FadeIn>
